@@ -1,0 +1,6 @@
+fastapi
+spacy
+scikit-learn
+pandas
+healthcare-ai-lib1
+healthcare-ai-lib2
