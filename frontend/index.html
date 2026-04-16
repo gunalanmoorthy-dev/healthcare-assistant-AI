@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Assistant AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #4CAF50; }
+        .section { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+        .section h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>Healthcare Assistant AI</h1>
+
+    <div class="section" id="symptom-checker">
+        <h2>Symptom Checker</h2>
+        <form id="symptom-form">
+            <label for="symptoms">Enter your symptoms:</label><br>
+            <input type="text" id="symptoms" name="symptoms" required>
+            <button type="submit">Check Symptoms</button>
+        </form>
+        <div id="symptom-result"></div>
+    </div>
+
+    <div class="section" id="medication-info">
+        <h2>Medication Information</h2>
+        <form id="medication-form">
+            <label for="medication">Enter medication name:</label><br>
+            <input type="text" id="medication" name="medication" required>
+            <button type="submit">Get Info</button>
+        </form>
+        <div id="medication-result"></div>
+    </div>
+
+    <div class="section" id="health-tips">
+        <h2>Health Tips</h2>
+        <button id="get-tips">Get Health Tips</button>
+        <div id="tips-result"></div>
+    </div>
+
+    <script>
+        document.getElementById('symptom-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const symptoms = document.getElementById('symptoms').value;
+            // Placeholder for symptom checking logic
+            document.getElementById('symptom-result').innerText = `You entered: ${symptoms}`;
+        });
+
+        document.getElementById('medication-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const medication = document.getElementById('medication').value;
+            // Placeholder for medication info lookup logic
+            document.getElementById('medication-result').innerText = `You entered: ${medication}`;
+        });
+
+        document.getElementById('get-tips').addEventListener('click', function() {
+            // Placeholder for fetching health tips logic
+            document.getElementById('tips-result').innerText = 'Here are some health tips...';
+        });
+    </script>
+</body>
+</html>
